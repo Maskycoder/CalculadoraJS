@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
     <title>Calculadora en JavaScript</title>
 </head>
 <body>
@@ -11,27 +12,37 @@
         <h1>Calculadora en JavaScript</h1>
     </header>
     <section class="container">
-        <div class="display">
-            <button id="limpiarDisplay" type="button">C</button>
-            <div class="display"><span id="display"></span></div>
-        </div>
-        <div class="buttonsPad">
-            <button type="button" class="functionButton" id="button7">7</button>
-            <button type="button" class="functionButton" id="button8">8</button>
-            <button type="button" class="functionButton" id="button9">9</button>
-            <button type="button" class="functionButton" id="buttonPlus">+</button>
-            <button type="button" class="functionButton" id="button4">4</button>
-            <button type="button" class="functionButton" id="button5">5</button>
-            <button type="button" class="functionButton" id="button6">6</button>
-            <button type="button" class="functionButton" id="buttonMinus">-</button>
-            <button type="button" class="functionButton" id="button1">1</button>
-            <button type="button" class="functionButton" id="button2">2</button>
-            <button type="button" class="functionButton" id="button3">3</button>
-            <button type="button" class="functionButton" id="buttonDivide">/</button>
-            <button type="button" class="functionButton" id="button0">0</button>
-            <button type="button" class="functionButton" id="buttonDot">.</button>
-            <button type="button" class="functionButton" id="buttonEqual">=</button>
-            <button type="button" class="functionButton" id="buttonTimes">X</button>
+        <div class="calculator">
+            <div class="display">
+                <button id="limpiarDisplay" type="button">C</button>
+                <div class="screen"><span id="screen"></span></div>
+            </div>
+            <div class="buttonsPad">
+                <div class="row">
+                    <button type="button" class="functionButton" id="button7">7</button>
+                    <button type="button" class="functionButton" id="button8">8</button>
+                    <button type="button" class="functionButton" id="button9">9</button>
+                    <button type="button" class="functionButton" id="buttonPlus">+</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="functionButton" id="button4">4</button>
+                    <button type="button" class="functionButton" id="button5">5</button>
+                    <button type="button" class="functionButton" id="button6">6</button>
+                    <button type="button" class="functionButton" id="buttonMinus">-</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="functionButton" id="button1">1</button>
+                    <button type="button" class="functionButton" id="button2">2</button>
+                    <button type="button" class="functionButton" id="button3">3</button>
+                    <button type="button" class="functionButton" id="buttonDivide">/</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="functionButton" id="button0">0</button>
+                    <button type="button" class="functionButton" id="buttonDot">.</button>
+                    <button type="button" class="functionButton" id="buttonEqual">=</button>
+                    <button type="button" class="functionButton" id="buttonTimes">X</button>
+                </div>
+            </div>
         </div>
     </section>
     <footer></footer> 

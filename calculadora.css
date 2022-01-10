@@ -1,0 +1,53 @@
+:root{
+    --primary-color: #FFAB76;
+    --secondary-color: #BAFFB4;
+    --lg: 24px;
+    --mg: 18px;
+    --sm: 10px;
+}
+.container{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 8px;
+}
+.calculator{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+.display{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+.display button{
+    height: 60px;
+    width: 60px;
+    font-size: var(--lg);
+}
+.display .screen{
+    height: 60px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: var(--lg);
+}
+.buttonsPad{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 4px;
+}
+.buttonsPad .row{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonsPad button{
+    width: 80px;
+    height: 80px;
+    font-size: var(--lg);
+}
